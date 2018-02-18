@@ -1,1 +1,1 @@
-export { default } from "./remote-js";
+export { default } from "./remote-script";

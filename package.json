@@ -1,5 +1,5 @@
 {
-  "name": "remote-js",
+  "name": "remote-script",
   "description": "Javascript for importing remote javascript",
   "version": "0.0.1",
   "author": "Zachary Sierakowski",
@@ -10,10 +10,10 @@
     "require",
     "scripts"
   ],
-  "main": "./dist/remote-js.js",
+  "main": "./dist/remote-script.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zachary-sierakowski/remote-js.git"
+    "url": "https://github.com/zachary-sierakowski/remote-script.git"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
