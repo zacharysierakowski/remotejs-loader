@@ -1,0 +1,31 @@
+{
+  "name": "remote-js",
+  "description": "Javascript for importing remote javascript",
+  "version": "0.0.1",
+  "author": "Zachary Sierakowski",
+  "keywords": [
+    "javascript",
+    "remote",
+    "import",
+    "require",
+    "scripts"
+  ],
+  "main": "./dist/remote-js.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachary-sierakowski/remote-js.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress",
+    "prettier": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "prettier": "^1.7.3",
+    "webpack": "^3.11.0"
+  }
+}
