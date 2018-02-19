@@ -6,8 +6,8 @@ module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "remotejs.js",
-    library: "remotejs",
+    filename: "index.js",
+    library: "remotejs-loader",
     libraryTarget: "umd"
   },
   devtool: "cheap-module-source-map",

@@ -1,16 +1,16 @@
-# remotejs
+# remotejs-loader
 
 Javascript for importing remote javascript
 
 ### Installing
 
 ```
-npm install remotejs
+npm install remotejs-loader
 ```
 
 ### Basic usage
 ```javascript
-import remotejs from "remotejs";
+import remotejs from "remotejs-loader";
 
 remotejs("/path/to/remote/js.js")
   .then(() => {
@@ -23,7 +23,7 @@ remotejs("/path/to/remote/js.js")
 
 ### Using options
 ```javascript
-import remotejs from "remotejs";
+import remotejs from "remotejs-loader";
 
 remotejs("/path/to/remote/js.js", { forceReload: true })
   .then(() => {
