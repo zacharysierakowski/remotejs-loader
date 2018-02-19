@@ -1,1 +1,1 @@
-### remote-script
+### remotejs

@@ -1,5 +1,5 @@
 /**
- * remote-script.js
+ * remotejs.js
  * loads remote javascript scripts and modules
  */
 
