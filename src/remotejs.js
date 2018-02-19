@@ -7,19 +7,19 @@
 const scripts = {};
 
 // newScript - creates and returns a new script tag
-const newScript = src => {
+const newScript = path => {
   const script = document.createElement("script");
-  script.src = src;
+  script.src = path;
   script.async = true;
   return script;
 };
 
 // loadScript - creates a new script and loads it into the DOM
-const loadScript = src => {
+const loadScript = path => {
   const head = document.getElementsByTagName("head")[0];
-  const script = newScript(src);
+  const script = newScript(path);
 
-  scripts[src] = script;
+  scripts[path] = script;
   head.insertBefore(script, head.lastChild);
 
   return new Promise((resolve, reject) => {
@@ -29,34 +29,22 @@ const loadScript = src => {
 };
 
 // loads the script into the DOM
-export default (path, { urlArgs, rootPath, forceReload }) => {
+export default (path, { forceReload }) => {
   if (!path) {
     return new Promise((_, reject) => {
       reject("path not valid");
     });
   }
 
-  let src = path;
-
-  // prepend rootPath
-  if (rootPath && !/^https?:\/\//.test(src)) {
-    src = `${rootPath}${src}`;
-  }
-
-  // append any urlArgs
-  if (urlArgs) {
-    src = `${src}${src.indexOf("?") === -1 ? "?" : "&"}${urlArgs}`;
-  }
-
-  if (!scripts[src]) {
+  if (!scripts[path]) {
     // new script, load script into the DOM
-    return loadScript(src);
+    return loadScript(path);
   } else if (forceReload) {
     // script was already loaded and force a reload
     // by removing then adding the script
-    const script = scripts[src];
+    const script = scripts[path];
     script.parentNode.removeChild(script);
-    return loadScript(src);
+    return loadScript(path);
   }
 
   // script was already loaded, do nothing
