@@ -22,7 +22,24 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
     "prettier": "prettier --write 'src/**/*.js'",
+    "cz": "git-cz",
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "\nPlease use `yarn cz` to commit your changes"
+    }
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,8 +47,13 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.18",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "prettier": "^1.7.3",
     "semantic-release": "^12.4.1",
+    "validate-commit-msg": "^2.14.0",
     "webpack": "^3.11.0"
   }
 }
