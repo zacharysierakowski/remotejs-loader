@@ -25,7 +25,7 @@
     "cz": "git-cz",
     "precommit": "lint-staged",
     "commitmsg": "validate-commit-msg",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "*.js": [
