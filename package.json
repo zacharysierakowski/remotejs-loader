@@ -21,7 +21,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
-    "prettier": "prettier --write 'src/**/*.js'"
+    "prettier": "prettier --write 'src/**/*.js'",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,6 +31,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.18",
     "prettier": "^1.7.3",
+    "semantic-release": "^12.4.1",
     "webpack": "^3.11.0"
   }
 }

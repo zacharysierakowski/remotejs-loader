@@ -1,6 +1,10 @@
-# remotejs-loader
-
-Javascript for importing remote javascript
+<h1 align="center">remotejs-loader</h1>
+<h3 align="center">Javascript for importing remote javascript</h3>
+<p align="center">
+  <a href="#badge">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+  </a>
+</p>
 
 ### Installing
 
