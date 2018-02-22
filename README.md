@@ -1,4 +1,4 @@
-# remotejs
+# remotejs-loader
  
 Javascript for importing remote javascript
 
