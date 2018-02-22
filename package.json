@@ -1,7 +1,7 @@
 {
   "name": "remotejs-loader",
   "description": "Javascript for importing remote javascript",
-  "version": "0.0.2",
+  "version": "0.0.0-development",
   "author": "Zachary Sierakowski",
   "keywords": [
     "javascript",
