@@ -28,7 +28,7 @@ const loadScript = path => {
 };
 
 // loads the script into the DOM
-export default (path, { forceReload }) => {
+export default (path, { forceReload } = {}) => {
   if (!path) {
     return new Promise((_, reject) => {
       reject("path not valid");
