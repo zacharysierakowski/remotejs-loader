@@ -1,6 +1,6 @@
 # remotejs-loader
  
-Javascript for importing remote javascript
+Dynamically load remote javascript into the DOM
 
 [![Build Status](https://travis-ci.org/zachary-sierakowski/remotejs-loader.svg?branch=master)](https://travis-ci.org/zachary-sierakowski/remotejs-loader) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)  [![semantic-release](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
